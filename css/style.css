@@ -1,0 +1,383 @@
+/* === ESTILOS PERSONALIZADOS PARA SECCIONES SIN BOOTSTRAP === */
+
+/* SECCIÓN: Frutas */
+/* Ajustar imagen a redonda */
+.frutas .imagen img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Cambiar ícono de lista */
+/* Fondo general de la sección */
+.frutas {
+  background-color: #f5f5f5;
+  padding: 0px 0;
+  
+}
+
+/* Crea la franja blanca de ancho completo */
+.frutas .fondo-blanco {
+  background-color: #fff;
+  width: 100%;
+  padding: 100px 100px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor centrado */
+.frutas .contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Imagen del granjero */
+.frutas .imagen img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Estilos del texto */
+.frutas .texto {
+  flex: 1 1 500px;
+  padding: 20px;
+}
+
+.frutas .texto h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.frutas .texto p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.frutas .texto ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.frutas .texto ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.frutas .texto ul li i {
+  color: green;
+  margin-right: 10px;
+}
+
+/* Botón personalizado */
+.btn-personal {
+  display: inline-block;
+  background-color: #2d862d;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .frutas .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .frutas .imagen img {
+    margin-bottom: 20px;
+  }
+
+  .frutas .texto {
+    padding: 0;
+  }
+}
+
+
+/* SECCIÓN: Nos Caracteriza */
+.caracteristicas-section {
+  background-color: #f7f9fb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.caracteristicas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.carac-box {
+  flex: 1 1 280px;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  max-width: 320px;
+}
+
+.carac-box img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.carac-box h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.carac-box p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.boton-verde {
+  display: inline-block;
+  background-color: #32a852;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.boton-verde:hover {
+  background-color: #2e8d48;
+}
+
+
+/* SECCIÓN: Productos */
+.productos {
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+
+.productos-header {
+  text-align: left;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.productos-header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.productos-header p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Botones de filtro */
+.filtros {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filtros button {
+  padding: 8px 16px;
+  border: 2px solid green;
+  background-color: #fff;
+  color: green;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filtros button:hover,
+.filtros button.activo {
+  background-color: green;
+  color: white;
+}
+
+/* Contenedor de productos */
+.producto-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Tarjeta individual */
+.producto {
+  background-color: #fff;
+  width: 200px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.producto h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.producto .precio {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Acciones: ver detalle y carrito */
+.acciones {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.acciones a {
+  display: block;
+  background-color: #f6f6f6;
+  color: #444;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  flex: 1;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.acciones a:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+
+
+/* SECCIÓN: Fincas */
+.fincas {
+  background-color: #3cbf3c; /* Verde vivo */
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.fincas-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.fincas-texto {
+  flex: 1 1 600px;
+}
+
+.fincas-texto h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.fincas-texto p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.fincas-boton {
+  flex: 0 0 auto;
+}
+
+.fincas-boton a {
+  background-color: #ff5722;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.fincas-boton a:hover {
+  background-color: #e64a19;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+  .fincas-contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fincas-boton {
+    margin-top: 20px;
+  }
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .frutas .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+  .caracteristicas {
+    flex-direction: column;
+  }
+  .producto-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content {
+    font-size: 0.9rem;
+  }
+}
